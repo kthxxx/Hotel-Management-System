@@ -1,8 +1,8 @@
 namespace HotelManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class Welcome : Form
     {
-        public Form1()
+        public Welcome()
         {
             InitializeComponent();
         }
@@ -37,11 +37,8 @@ namespace HotelManagementSystem
             string username = UsernameFill.Text;
             string password = PasswordFill.Text;
 
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
-            {
-                MessageBox.Show("Username and password cannot be empty.");
-                return;
-            }
+            UsernameFill.Text = string.Empty;
+            PasswordFill.Text = string.Empty;
 
         }
 

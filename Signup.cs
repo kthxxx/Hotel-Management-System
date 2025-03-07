@@ -20,15 +20,20 @@ namespace HotelManagementSystem
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            Form1 menuform = new Form1();
+            Welcome menuform = new Welcome();
             menuform.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Hide();
-            Form1 menuform = new Form1();
+            Welcome menuform = new Welcome();
             menuform.Show();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

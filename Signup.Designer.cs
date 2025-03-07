@@ -93,7 +93,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Helvetica", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(426, 167);
+            label2.Location = new Point(418, 167);
             label2.Name = "label2";
             label2.Size = new Size(90, 19);
             label2.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Helvetica", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(366, 269);
+            label4.Location = new Point(367, 269);
             label4.Name = "label4";
             label4.Size = new Size(136, 19);
             label4.TabIndex = 10;
@@ -154,6 +154,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "SignUp";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Sign Up";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -1,6 +1,6 @@
 ﻿namespace HotelManagementSystem
 {
-    partial class Form1
+    partial class Welcome
     {
         /// <summary>
         ///  Required designer variable.
@@ -145,7 +145,7 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // Form1
+            // Welcome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -161,7 +161,8 @@
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Welcome";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
