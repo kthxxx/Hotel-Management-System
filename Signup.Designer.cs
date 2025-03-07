@@ -38,6 +38,7 @@
             label4 = new Label();
             button2 = new Button();
             button1 = new Button();
+            ExitBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -138,11 +139,25 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // ExitBtn
+            // 
+            ExitBtn.BackColor = Color.Red;
+            ExitBtn.Font = new Font("Helvetica", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ExitBtn.ForeColor = SystemColors.Control;
+            ExitBtn.Location = new Point(797, 5);
+            ExitBtn.Name = "ExitBtn";
+            ExitBtn.Size = new Size(32, 28);
+            ExitBtn.TabIndex = 14;
+            ExitBtn.Text = "X";
+            ExitBtn.UseVisualStyleBackColor = false;
+            ExitBtn.Click += ExitBtn_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(837, 487);
+            Controls.Add(ExitBtn);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(textBox3);
@@ -153,6 +168,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "SignUp";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sign Up";
@@ -173,5 +189,6 @@
         private Label label4;
         private Button button2;
         private Button button1;
+        private Button ExitBtn;
     }
 }

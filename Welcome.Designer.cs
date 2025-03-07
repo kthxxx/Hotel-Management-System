@@ -38,6 +38,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            ExitBtn = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -145,12 +146,26 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // ExitBtn
+            // 
+            ExitBtn.BackColor = Color.Red;
+            ExitBtn.Font = new Font("Helvetica", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ExitBtn.ForeColor = SystemColors.Control;
+            ExitBtn.Location = new Point(797, 5);
+            ExitBtn.Name = "ExitBtn";
+            ExitBtn.Size = new Size(32, 28);
+            ExitBtn.TabIndex = 10;
+            ExitBtn.Text = "X";
+            ExitBtn.UseVisualStyleBackColor = false;
+            ExitBtn.Click += ExitBtn_Click;
+            // 
             // Welcome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(837, 487);
+            Controls.Add(ExitBtn);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -161,6 +176,7 @@
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Welcome";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
@@ -181,5 +197,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button ExitBtn;
     }
 }
