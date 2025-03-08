@@ -49,6 +49,19 @@
             panel5 = new Panel();
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
+            panel6 = new Panel();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            label2 = new Label();
+            label3 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBtn).BeginInit();
             panel2.SuspendLayout();
@@ -62,16 +75,21 @@
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // ExitBtn
             // 
+            ExitBtn.Anchor = AnchorStyles.Top;
             ExitBtn.BackColor = Color.Red;
             ExitBtn.Font = new Font("Helvetica", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ExitBtn.ForeColor = SystemColors.Control;
-            ExitBtn.Location = new Point(1199, 0);
+            ExitBtn.Location = new Point(1193, 0);
             ExitBtn.Name = "ExitBtn";
-            ExitBtn.Size = new Size(32, 28);
+            ExitBtn.Size = new Size(34, 31);
             ExitBtn.TabIndex = 0;
             ExitBtn.Text = "X";
             ExitBtn.UseVisualStyleBackColor = false;
@@ -97,6 +115,8 @@
             GalleryBtn.Size = new Size(100, 22);
             GalleryBtn.TabIndex = 4;
             GalleryBtn.Text = "GALLERY";
+            GalleryBtn.MouseLeave += GalleryBtn_MouseLeave;
+            GalleryBtn.MouseHover += GalleryBtn_MouseHover;
             // 
             // ResortBtn
             // 
@@ -107,13 +127,15 @@
             ResortBtn.Size = new Size(91, 22);
             ResortBtn.TabIndex = 3;
             ResortBtn.Text = "RESORT";
+            ResortBtn.MouseLeave += ResortBtn_MouseLeave;
+            ResortBtn.MouseHover += ResortBtn_MouseHover;
             // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(12, 87, 153);
             button2.Font = new Font("Helvetica", 20F, FontStyle.Bold);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(1006, 3);
+            button2.Location = new Point(1006, 2);
             button2.Name = "button2";
             button2.Size = new Size(225, 83);
             button2.TabIndex = 3;
@@ -180,14 +202,14 @@
             pictureBox2.Image = Properties.Resources.Resort_Front;
             pictureBox2.Location = new Point(3, -196);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1239, 616);
+            pictureBox2.Size = new Size(1225, 616);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             // 
             // button1
             // 
-            button1.Location = new Point(1006, 4);
+            button1.Location = new Point(1037, 4);
             button1.Name = "button1";
             button1.Size = new Size(156, 27);
             button1.TabIndex = 5;
@@ -284,12 +306,176 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
+            // panel6
+            // 
+            panel6.Controls.Add(label12);
+            panel6.Controls.Add(label11);
+            panel6.Controls.Add(label10);
+            panel6.Controls.Add(label9);
+            panel6.Controls.Add(label8);
+            panel6.Controls.Add(label7);
+            panel6.Controls.Add(label6);
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(pictureBox10);
+            panel6.Controls.Add(pictureBox9);
+            panel6.Controls.Add(pictureBox8);
+            panel6.Location = new Point(0, 2104);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(1231, 422);
+            panel6.TabIndex = 3;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.FromArgb(12, 87, 153);
+            pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox10.Image = Properties.Resources.download__1_;
+            pictureBox10.Location = new Point(841, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(387, 422);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 2;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.FromArgb(12, 87, 153);
+            pictureBox9.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox9.Image = Properties.Resources.download;
+            pictureBox9.Location = new Point(3, -3);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(387, 422);
+            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox9.TabIndex = 1;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.FromArgb(12, 87, 153);
+            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox8.Image = Properties.Resources.Dorado20a20Reserve;
+            pictureBox8.Location = new Point(424, -3);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(389, 422);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(12, 87, 153);
+            label2.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(12, 10);
+            label2.Name = "label2";
+            label2.Size = new Size(196, 29);
+            label2.TabIndex = 3;
+            label2.Text = "DELUXE ROOM";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(12, 87, 153);
+            label3.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(435, 10);
+            label3.Name = "label3";
+            label3.Size = new Size(167, 29);
+            label3.TabIndex = 4;
+            label3.Text = "SUITE ROOM";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.FromArgb(12, 87, 153);
+            label6.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(856, 7);
+            label6.Name = "label6";
+            label6.Size = new Size(216, 29);
+            label6.TabIndex = 5;
+            label6.Text = "REGULAR ROOM";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.FromArgb(12, 87, 153);
+            label7.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(12, 39);
+            label7.Name = "label7";
+            label7.Size = new Size(257, 22);
+            label7.TabIndex = 6;
+            label7.Text = "SeaBreeze Sanctuary Room";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.FromArgb(12, 87, 153);
+            label8.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.Control;
+            label8.Location = new Point(438, 39);
+            label8.Name = "label8";
+            label8.Size = new Size(175, 22);
+            label8.TabIndex = 7;
+            label8.Text = "Aqua Haven Room";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.FromArgb(12, 87, 153);
+            label9.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.Control;
+            label9.Location = new Point(856, 39);
+            label9.Name = "label9";
+            label9.Size = new Size(176, 22);
+            label9.TabIndex = 8;
+            label9.Text = "Garden King Room";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.FromArgb(12, 87, 153);
+            label10.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.Control;
+            label10.Location = new Point(12, 356);
+            label10.Name = "label10";
+            label10.Size = new Size(371, 44);
+            label10.TabIndex = 9;
+            label10.Text = "Waves. Breeze. Serenity";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(12, 87, 153);
+            label11.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(438, 356);
+            label11.Name = "label11";
+            label11.Size = new Size(353, 44);
+            label11.TabIndex = 10;
+            label11.Text = "Relax. Swim. Unwind.";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(12, 87, 153);
+            label12.Font = new Font("Script MT Bold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.Control;
+            label12.Location = new Point(856, 361);
+            label12.Name = "label12";
+            label12.Size = new Size(362, 38);
+            label12.TabIndex = 11;
+            label12.Text = "Nature. Peace. Refreshing.";
+            // 
             // LandingPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(1251, 695);
+            Controls.Add(panel6);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel1);
@@ -317,6 +503,11 @@
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -344,5 +535,18 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private Panel panel6;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label3;
+        private Label label2;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HotelManagementSystem.Properties;
 
 namespace HotelManagementSystem
 {
@@ -28,5 +29,20 @@ namespace HotelManagementSystem
             LandingPage menuform = new LandingPage();
             menuform.Show();
         }
+
+        private void CheckRoomBtn_Click(object sender, EventArgs e)
+        {
+            ShowAvailableRooms();
+        }
+
+        private void ShowAvailableRooms()
+        {
+            AvailableRoomPnl.Controls.Clear();  
+            AvailableRooms rooms = new AvailableRooms();
+            AvailableRoomPnl.Controls.Add(rooms);
+            rooms.BringToFront();
+        }
+
+
     }
 }

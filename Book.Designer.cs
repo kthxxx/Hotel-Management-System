@@ -50,19 +50,19 @@
             label9 = new Label();
             panel3 = new Panel();
             panel4 = new Panel();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            CheckRoomBtn = new Button();
+            AvailableRoomPnl = new FlowLayoutPanel();
             label10 = new Label();
             panel5 = new Panel();
-            pictureBox1 = new PictureBox();
-            label11 = new Label();
             label12 = new Label();
-            room11 = new Properties.Room1();
+            label11 = new Label();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBtn).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -167,7 +167,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Helvetica", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(682, 25);
+            label4.Location = new Point(508, 25);
             label4.Name = "label4";
             label4.Size = new Size(140, 17);
             label4.TabIndex = 9;
@@ -176,7 +176,7 @@
             // dateTimePicker2
             // 
             dateTimePicker2.Font = new Font("Helvetica", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker2.Location = new Point(682, 54);
+            dateTimePicker2.Location = new Point(508, 54);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(293, 26);
             dateTimePicker2.TabIndex = 8;
@@ -194,6 +194,7 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(textBox3);
             panel2.Controls.Add(textBox2);
             panel2.Controls.Add(textBox1);
@@ -279,6 +280,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(CheckRoomBtn);
             panel4.Controls.Add(dateTimePicker1);
             panel4.Controls.Add(label4);
             panel4.Controls.Add(label3);
@@ -288,15 +290,27 @@
             panel4.Size = new Size(1230, 110);
             panel4.TabIndex = 14;
             // 
-            // flowLayoutPanel1
+            // CheckRoomBtn
             // 
-            flowLayoutPanel1.AutoScroll = true;
-            flowLayoutPanel1.BorderStyle = BorderStyle.Fixed3D;
-            flowLayoutPanel1.Controls.Add(room11);
-            flowLayoutPanel1.Location = new Point(182, 496);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(828, 222);
-            flowLayoutPanel1.TabIndex = 15;
+            CheckRoomBtn.BackColor = Color.FromArgb(12, 87, 153);
+            CheckRoomBtn.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CheckRoomBtn.ForeColor = SystemColors.Control;
+            CheckRoomBtn.Location = new Point(823, 27);
+            CheckRoomBtn.Name = "CheckRoomBtn";
+            CheckRoomBtn.Size = new Size(273, 47);
+            CheckRoomBtn.TabIndex = 10;
+            CheckRoomBtn.Text = "CHECK AVAILABLE ROOMS";
+            CheckRoomBtn.UseVisualStyleBackColor = false;
+            CheckRoomBtn.Click += CheckRoomBtn_Click;
+            // 
+            // AvailableRoomPnl
+            // 
+            AvailableRoomPnl.AutoScroll = true;
+            AvailableRoomPnl.BorderStyle = BorderStyle.Fixed3D;
+            AvailableRoomPnl.Location = new Point(182, 496);
+            AvailableRoomPnl.Name = "AvailableRoomPnl";
+            AvailableRoomPnl.Size = new Size(828, 222);
+            AvailableRoomPnl.TabIndex = 15;
             // 
             // label10
             // 
@@ -315,31 +329,10 @@
             panel5.Controls.Add(label12);
             panel5.Controls.Add(label11);
             panel5.Controls.Add(pictureBox1);
-            panel5.Location = new Point(3, 729);
+            panel5.Location = new Point(-8, 729);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1231, 185);
+            panel5.Size = new Size(1242, 185);
             panel5.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.LANDSCAPELOGO;
-            pictureBox1.Location = new Point(442, 17);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(381, 78);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Helvetica", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.Control;
-            label11.Location = new Point(232, 113);
-            label11.Name = "label11";
-            label11.Size = new Size(806, 25);
-            label11.TabIndex = 7;
-            label11.Text = "The Last Resort |100-1, Kahumayan St., Bahay, Sibonga, Cebu | +63 929 517 4467";
             // 
             // label12
             // 
@@ -352,13 +345,38 @@
             label12.TabIndex = 8;
             label12.Text = "Jun Mark Manos | Keith Justin Emeterio | Junex Glenn Baran | Christian Hingpit";
             // 
-            // room11
+            // label11
             // 
-            room11.BorderStyle = BorderStyle.FixedSingle;
-            room11.Location = new Point(3, 3);
-            room11.Name = "room11";
-            room11.Size = new Size(795, 220);
-            room11.TabIndex = 0;
+            label11.AutoSize = true;
+            label11.Font = new Font("Helvetica", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(232, 113);
+            label11.Name = "label11";
+            label11.Size = new Size(806, 25);
+            label11.TabIndex = 7;
+            label11.Text = "The Last Resort |100-1, Kahumayan St., Bahay, Sibonga, Cebu | +63 929 517 4467";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LANDSCAPELOGO;
+            pictureBox1.Location = new Point(442, 17);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(381, 78);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(12, 87, 153);
+            button1.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(660, 53);
+            button1.Name = "button1";
+            button1.Size = new Size(226, 47);
+            button1.TabIndex = 11;
+            button1.Text = "SAVE INFORMATION";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Book
             // 
@@ -368,7 +386,7 @@
             ClientSize = new Size(1251, 695);
             Controls.Add(panel5);
             Controls.Add(label10);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(AvailableRoomPnl);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(label1);
@@ -388,7 +406,6 @@
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            flowLayoutPanel1.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -420,12 +437,13 @@
         private Label label9;
         private Panel panel3;
         private Panel panel4;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel AvailableRoomPnl;
         private Label label10;
         private Panel panel5;
         private PictureBox pictureBox1;
         private Label label11;
         private Label label12;
-        private Properties.Room1 room11;
+        private Button CheckRoomBtn;
+        private Button button1;
     }
 }

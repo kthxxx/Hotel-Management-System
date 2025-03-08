@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HotelManagementSystem.Properties
 {
-    public partial class Room1 : UserControl
+    public partial class AvailableRooms : UserControl
     {
-        public Room1()
+        public AvailableRooms()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

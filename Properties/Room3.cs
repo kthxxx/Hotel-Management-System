@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HotelManagementSystem.Properties
+namespace HotelManagementSystem
 {
-    public partial class Room1 : UserControl
+    public partial class Room3 : UserControl
     {
-        public Room1()
+        public Room3()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
