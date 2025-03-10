@@ -50,18 +50,18 @@
             pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel6 = new Panel();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label3 = new Label();
+            label2 = new Label();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBtn).BeginInit();
             panel2.SuspendLayout();
@@ -87,7 +87,7 @@
             ExitBtn.BackColor = Color.Red;
             ExitBtn.Font = new Font("Helvetica", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ExitBtn.ForeColor = SystemColors.Control;
-            ExitBtn.Location = new Point(1193, 0);
+            ExitBtn.Location = new Point(1194, 4);
             ExitBtn.Name = "ExitBtn";
             ExitBtn.Size = new Size(34, 31);
             ExitBtn.TabIndex = 0;
@@ -209,9 +209,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(1037, 4);
+            button1.Location = new Point(1006, 4);
             button1.Name = "button1";
-            button1.Size = new Size(156, 27);
+            button1.Size = new Size(168, 27);
             button1.TabIndex = 5;
             button1.Text = "Log in as Admin";
             button1.UseVisualStyleBackColor = true;
@@ -325,6 +325,114 @@
             panel6.Size = new Size(1231, 422);
             panel6.TabIndex = 3;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(12, 87, 153);
+            label12.Font = new Font("Script MT Bold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.Control;
+            label12.Location = new Point(856, 361);
+            label12.Name = "label12";
+            label12.Size = new Size(362, 38);
+            label12.TabIndex = 11;
+            label12.Text = "Nature. Peace. Refreshing.";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(12, 87, 153);
+            label11.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(438, 356);
+            label11.Name = "label11";
+            label11.Size = new Size(353, 44);
+            label11.TabIndex = 10;
+            label11.Text = "Relax. Swim. Unwind.";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.FromArgb(12, 87, 153);
+            label10.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.Control;
+            label10.Location = new Point(12, 356);
+            label10.Name = "label10";
+            label10.Size = new Size(371, 44);
+            label10.TabIndex = 9;
+            label10.Text = "Waves. Breeze. Serenity";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.FromArgb(12, 87, 153);
+            label9.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.Control;
+            label9.Location = new Point(856, 39);
+            label9.Name = "label9";
+            label9.Size = new Size(176, 22);
+            label9.TabIndex = 8;
+            label9.Text = "Garden King Room";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.FromArgb(12, 87, 153);
+            label8.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.Control;
+            label8.Location = new Point(438, 39);
+            label8.Name = "label8";
+            label8.Size = new Size(175, 22);
+            label8.TabIndex = 7;
+            label8.Text = "Aqua Haven Room";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.FromArgb(12, 87, 153);
+            label7.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(12, 39);
+            label7.Name = "label7";
+            label7.Size = new Size(257, 22);
+            label7.TabIndex = 6;
+            label7.Text = "SeaBreeze Sanctuary Room";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.FromArgb(12, 87, 153);
+            label6.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.Control;
+            label6.Location = new Point(856, 7);
+            label6.Name = "label6";
+            label6.Size = new Size(216, 29);
+            label6.TabIndex = 5;
+            label6.Text = "REGULAR ROOM";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(12, 87, 153);
+            label3.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(435, 10);
+            label3.Name = "label3";
+            label3.Size = new Size(167, 29);
+            label3.TabIndex = 4;
+            label3.Text = "SUITE ROOM";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(12, 87, 153);
+            label2.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(12, 10);
+            label2.Name = "label2";
+            label2.Size = new Size(196, 29);
+            label2.TabIndex = 3;
+            label2.Text = "DELUXE ROOM";
+            // 
             // pictureBox10
             // 
             pictureBox10.BackColor = Color.FromArgb(12, 87, 153);
@@ -360,114 +468,6 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(12, 87, 153);
-            label2.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(12, 10);
-            label2.Name = "label2";
-            label2.Size = new Size(196, 29);
-            label2.TabIndex = 3;
-            label2.Text = "DELUXE ROOM";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(12, 87, 153);
-            label3.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(435, 10);
-            label3.Name = "label3";
-            label3.Size = new Size(167, 29);
-            label3.TabIndex = 4;
-            label3.Text = "SUITE ROOM";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.FromArgb(12, 87, 153);
-            label6.Font = new Font("Helvetica", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(856, 7);
-            label6.Name = "label6";
-            label6.Size = new Size(216, 29);
-            label6.TabIndex = 5;
-            label6.Text = "REGULAR ROOM";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.FromArgb(12, 87, 153);
-            label7.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = SystemColors.Control;
-            label7.Location = new Point(12, 39);
-            label7.Name = "label7";
-            label7.Size = new Size(257, 22);
-            label7.TabIndex = 6;
-            label7.Text = "SeaBreeze Sanctuary Room";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.FromArgb(12, 87, 153);
-            label8.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = SystemColors.Control;
-            label8.Location = new Point(438, 39);
-            label8.Name = "label8";
-            label8.Size = new Size(175, 22);
-            label8.TabIndex = 7;
-            label8.Text = "Aqua Haven Room";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.FromArgb(12, 87, 153);
-            label9.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = SystemColors.Control;
-            label9.Location = new Point(856, 39);
-            label9.Name = "label9";
-            label9.Size = new Size(176, 22);
-            label9.TabIndex = 8;
-            label9.Text = "Garden King Room";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.FromArgb(12, 87, 153);
-            label10.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.ForeColor = SystemColors.Control;
-            label10.Location = new Point(12, 356);
-            label10.Name = "label10";
-            label10.Size = new Size(371, 44);
-            label10.TabIndex = 9;
-            label10.Text = "Waves. Breeze. Serenity";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.FromArgb(12, 87, 153);
-            label11.Font = new Font("Script MT Bold", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.Control;
-            label11.Location = new Point(438, 356);
-            label11.Name = "label11";
-            label11.Size = new Size(353, 44);
-            label11.TabIndex = 10;
-            label11.Text = "Relax. Swim. Unwind.";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.FromArgb(12, 87, 153);
-            label12.Font = new Font("Script MT Bold", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = SystemColors.Control;
-            label12.Location = new Point(856, 361);
-            label12.Name = "label12";
-            label12.Size = new Size(362, 38);
-            label12.TabIndex = 11;
-            label12.Text = "Nature. Peace. Refreshing.";
             // 
             // LandingPage
             // 

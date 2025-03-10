@@ -10,24 +10,20 @@ using System.Windows.Forms;
 
 namespace HotelManagementSystem.Properties
 {
-    public partial class Room1 : UserControl
+    public partial class Gcash : UserControl
     {
-        public Room1()
+        public Gcash()
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+            
         private void button1_Click(object sender, EventArgs e)
         {
-            Confirmation confirmation = new Confirmation();
-            confirmation.Show();
-            this.Hide();
-
+            Random random = new Random();
+            int randomNumber = random.Next(000000, 1000000); 
+            MessageBox.Show($"Your Gcash transaction code is: {randomNumber}", "Transaction Code");
         }
+
+
     }
 }

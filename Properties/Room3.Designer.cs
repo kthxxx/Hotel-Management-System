@@ -65,7 +65,7 @@
             // 
             panel1.BackColor = Color.FromArgb(12, 87, 153);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(265, 14);
+            panel1.Location = new Point(274, 14);
             panel1.Name = "panel1";
             panel1.Size = new Size(466, 40);
             panel1.TabIndex = 2;
@@ -75,7 +75,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Helvetica", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.FromArgb(12, 87, 153);
-            label4.Location = new Point(265, 101);
+            label4.Location = new Point(273, 101);
             label4.Name = "label4";
             label4.Size = new Size(452, 17);
             label4.TabIndex = 7;
@@ -86,7 +86,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Helvetica", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(12, 87, 153);
-            label3.Location = new Point(265, 82);
+            label3.Location = new Point(273, 82);
             label3.Name = "label3";
             label3.Size = new Size(377, 17);
             label3.TabIndex = 6;
@@ -97,7 +97,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Helvetica", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(12, 87, 153);
-            label2.Location = new Point(265, 63);
+            label2.Location = new Point(273, 63);
             label2.Name = "label2";
             label2.Size = new Size(478, 17);
             label2.TabIndex = 5;

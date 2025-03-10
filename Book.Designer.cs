@@ -41,6 +41,7 @@
             dateTimePicker2 = new DateTimePicker();
             label5 = new Label();
             panel2 = new Panel();
+            button1 = new Button();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
@@ -57,7 +58,6 @@
             label12 = new Label();
             label11 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBtn).BeginInit();
             panel2.SuspendLayout();
@@ -207,6 +207,18 @@
             panel2.Size = new Size(1231, 128);
             panel2.TabIndex = 11;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(12, 87, 153);
+            button1.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.Control;
+            button1.Location = new Point(660, 53);
+            button1.Name = "button1";
+            button1.Size = new Size(226, 47);
+            button1.TabIndex = 11;
+            button1.Text = "SAVE INFORMATION";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // textBox3
             // 
             textBox3.Location = new Point(250, 92);
@@ -309,7 +321,7 @@
             AvailableRoomPnl.BorderStyle = BorderStyle.Fixed3D;
             AvailableRoomPnl.Location = new Point(182, 496);
             AvailableRoomPnl.Name = "AvailableRoomPnl";
-            AvailableRoomPnl.Size = new Size(828, 222);
+            AvailableRoomPnl.Size = new Size(828, 382);
             AvailableRoomPnl.TabIndex = 15;
             // 
             // label10
@@ -329,9 +341,9 @@
             panel5.Controls.Add(label12);
             panel5.Controls.Add(label11);
             panel5.Controls.Add(pictureBox1);
-            panel5.Location = new Point(-8, 729);
+            panel5.Location = new Point(-8, 925);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1242, 185);
+            panel5.Size = new Size(1242, 186);
             panel5.TabIndex = 14;
             // 
             // label12
@@ -339,7 +351,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Helvetica", 11F);
             label12.ForeColor = SystemColors.Control;
-            label12.Location = new Point(360, 151);
+            label12.Location = new Point(371, 141);
             label12.Name = "label12";
             label12.Size = new Size(527, 17);
             label12.TabIndex = 8;
@@ -350,7 +362,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Helvetica", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.ForeColor = SystemColors.Control;
-            label11.Location = new Point(232, 113);
+            label11.Location = new Point(234, 109);
             label11.Name = "label11";
             label11.Size = new Size(806, 25);
             label11.TabIndex = 7;
@@ -359,24 +371,12 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LANDSCAPELOGO;
-            pictureBox1.Location = new Point(442, 17);
+            pictureBox1.Location = new Point(419, 28);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(381, 78);
+            pictureBox1.Size = new Size(442, 78);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(12, 87, 153);
-            button1.Font = new Font("Helvetica", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(660, 53);
-            button1.Name = "button1";
-            button1.Size = new Size(226, 47);
-            button1.TabIndex = 11;
-            button1.Text = "SAVE INFORMATION";
-            button1.UseVisualStyleBackColor = false;
             // 
             // Book
             // 

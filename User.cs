@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace HotelManagementSystem
 {
-    public class HotelRoom
+    internal class User
     {
         public int Id { get; set; }
-        public string RoomNumber { get; set; }
-        public string Type { get; set; } // Deluxe, Suite, Standard
-        public bool IsAvailable { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; } // Admin, Staff, Guest
     }
 }

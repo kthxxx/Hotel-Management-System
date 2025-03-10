@@ -10,24 +10,18 @@ using System.Windows.Forms;
 
 namespace HotelManagementSystem.Properties
 {
-    public partial class Room1 : UserControl
+    public partial class BankTransfer : UserControl
     {
-        public Room1()
+        public BankTransfer()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Confirmation confirmation = new Confirmation();
-            confirmation.Show();
-            this.Hide();
-
+            Random random = new Random();
+            int randomCode = random.Next(100000, 1000000); 
+            MessageBox.Show($"Your bank transfer code is: {randomCode}", "Transfer Code");
         }
     }
 }

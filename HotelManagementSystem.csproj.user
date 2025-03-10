@@ -4,10 +4,25 @@
     <Compile Update="Book.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Confirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LandingPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Properties\AvailableRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\BankTransfer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Card.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Gcash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Paynow.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Properties\Room1.cs">

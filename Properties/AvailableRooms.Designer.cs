@@ -43,7 +43,7 @@
             flowLayoutPanel1.Controls.Add(room31);
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(808, 705);
+            flowLayoutPanel1.Size = new Size(802, 705);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // room11
@@ -77,7 +77,7 @@
             AutoScroll = true;
             Controls.Add(flowLayoutPanel1);
             Name = "AvailableRooms";
-            Size = new Size(810, 696);
+            Size = new Size(759, 679);
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
